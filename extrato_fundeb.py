@@ -80,9 +80,6 @@ def processar_municipios(municipios: list, mes_ano: str):
     with open(arquivo_saida, "w", encoding="utf-8") as f:
         f.write("Municípios com sucesso:\n" + "\n".join(municipios_sucesso) + "\n\n")
         f.write("Municípios com erro:\n" + "\n".join(municipios_com_erro) + "\n")
-    
-    print("Municípios com sucesso:", municipios_sucesso)
-    print("Municípios com erro:", municipios_com_erro)
 
 if __name__ == "__main__":
     mes_ano = input("Digite o mês e ano no formato 'MM / AAAA': ")

@@ -15,6 +15,8 @@ Antes de executar o script, certifique-se de ter:
 As bibliotecas Python necessárias:
 - Selenium
 
+Use: ```pip install selenium```
+
 ## Como Executar
 
 Use: ```python extrato_fundeb.py```

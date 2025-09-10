@@ -33,3 +33,21 @@ Municípios que apresentarem falha na consulta serão listados no arquivo de err
 O script aguarda até 15 segundos para cada elemento antes de gerar erro.
 
 Caso o site seja atualizado, os seletores XPath podem precisar de ajustes.
+
+## Observação sobre os arquivos baixados:
+
+Casos de repetição (não estão sendo reconhecidos):
+- Barão de Grajaú
+- Godofredo Viana
+
+Municípios ausentes em razão da duplicidade acima:
+- Viana
+- Grajaú
+
+## Observações para o processamento dos arquivos:
+
+Após concatenar os arquivos .csv, padronizar as datas substituindo as barras ```( / )``` por hifens ```( - )```.
+
+No campo cnpj_titular, remover os caracteres de pontuação ```(. , / , -)```.
+
+```Importante: manter este campo como texto (string), para evitar perda de zeros à esquerda ou alterações de formatação automática.```

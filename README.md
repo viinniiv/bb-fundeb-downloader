@@ -51,3 +51,11 @@ Após concatenar os arquivos .csv, padronizar as datas substituindo as barras ``
 No campo cnpj_titular, remover os caracteres de pontuação ```(. , / , -)```.
 
 ```Importante: manter este campo como texto (string), para evitar perda de zeros à esquerda ou alterações de formatação automática.```
+
+## Padrão de Formatação Numérica:
+
+Ao registrar valores monetários ou numéricos, deve-se substituir a vírgula (,) pelo ponto (.) como separador decimal e não utilizar ponto (.) como separador de milhar.
+
+Formato incorreto: 34.153.652,22
+
+Formato correto: 34153652.22

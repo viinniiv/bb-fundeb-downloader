@@ -36,11 +36,9 @@ Caso o site seja atualizado, os seletores XPath podem precisar de ajustes.
 
 ## Observação sobre os arquivos baixados:
 
-Casos de repetição (não estão sendo reconhecidos):
-- Barão de Grajaú
-- Godofredo Viana
+Os municípios Barão de Grajaú e Godofredo Viana estavam sendo baixados duas vezes, em vez de o sistema considerar corretamente Grajaú e Viana como municípios distintos. Em razão dessa duplicidade, Viana e Grajaú acabaram sendo removidos da lista e é preciso realizar o download manual.
 
-Municípios ausentes em razão da duplicidade acima:
+## Download Manual:
 - Viana
 - Grajaú
 

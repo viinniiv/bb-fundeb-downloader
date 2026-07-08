@@ -55,7 +55,7 @@ def processar_municipios(municipios: list, mes_ano: str):
                     pass
 
             wait.until(
-                EC.presence_of_element_located((By.XPATH, "//input[@placeholder='MM / AAAA']"))
+                EC.presence_of_element_located((By.XPATH, "//input[@placeholder='MM/AAAA']"))
             ).send_keys(mes_ano)
 
             botao_conta = wait.until(
@@ -92,7 +92,8 @@ def processar_municipios(municipios: list, mes_ano: str):
 
             botao_download = wait.until(
                 EC.element_to_be_clickable(
-                    (By.XPATH, "//button[.//bb-icon[@icon='download']]")
+                    #(By.XPATH, "//button[.//bb-icon[@icon='download']]")
+                    (By.XPATH, "//bb-icon-button[@aria-label='download']")
                 )
             )
             navegador.execute_script("arguments[0].click();", botao_download)
